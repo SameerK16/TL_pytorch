@@ -10,31 +10,6 @@ import matplotlib.pyplot as plt
 plt.rcParams['font.size'] = 14
 
 
-def habitat2(img):
-
-    cv2.namedWindow('image', cv2.WINDOW_NORMAL)
-    cv2.resizeWindow('image', 700, 700)
-
-    imgray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    ret,thresh = cv2.threshold(imgray, 127, 255, cv2.THRESH_BINARY)
-    contours, hierarchy = cv2.findContours(thresh, cv2.RETR_CCOMP, cv2.CHAIN_APPROX_SIMPLE)
-    
-    #contour_img = cv2.drawContours(img, contours, -1, (0,0,255), 3)
-    for cnt in contours:
-        if  90000 > cv2.contourArea(cnt) > 60000:
-            print(cv2.contourArea(cnt))
-            x, y, w, h = cv2.boundingRect(cnt)
-            img = cv2.rectangle(img, (x, y), (x+w, y+h), (0, 0, 255), 2)
-    
-    cv2.drawContours(img, )
-    cv2.imshow('image', )
-    
-    k = cv2.waitKey(0)
-    if k == 27:
-        cv2.destroyAllWindows()
-    
-    cv2.imwrite('result.png', img)
-
 def habitat(img, op_path, flag=1):
     '''
     This function will crop each habitat contours from arena image
