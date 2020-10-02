@@ -12,8 +12,8 @@
     <td>Output image</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/SameerK16/TL_pytorch/blob/main/Extracting%20imges/reults/image_1.png" width = 480 height = 360></td>
-    <td><img src="https://github.com/SameerK16/TL_pytorch/blob/main/Extracting%20imges/reults/output-1.png" width = 480 height = 360></td>
+    <td><img src="https://github.com/SameerK16/TL_pytorch/blob/main/Extracting%20imges/reults/image_1.png"></td>
+    <td><img src="https://github.com/SameerK16/TL_pytorch/blob/main/Extracting%20imges/reults/output-1.png"></td>
   </tr>
 </Table>
 
