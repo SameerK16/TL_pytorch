@@ -1,4 +1,4 @@
-# Tranfer Learning model
+# Task B
 
 * Framework: <b>PyTorch</b>
 
